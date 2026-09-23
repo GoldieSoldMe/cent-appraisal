@@ -2256,6 +2256,15 @@ footer span{
   }
 }
 
+
+.vehicle-notes-field{
+  margin-top:4px;
+  margin-bottom:4px;
+}
+.vehicle-notes-field textarea{
+  min-height:108px;
+}
+
 </style>
 </head>
 <body>
@@ -2483,6 +2492,16 @@ footer span{
             <label><input type="checkbox" name="mechanicalIssues" value="4WD/AWD issue"> 4WD / AWD</label>
             <label><input type="checkbox" name="mechanicalIssues" value="None"> None that I’m aware of</label>
           </fieldset>
+
+          <label class="field vehicle-notes-field">
+            <span>Anything else we should know about the vehicle?</span>
+            <textarea
+              name="vehicleNotes"
+              rows="4"
+              placeholder="Service history, recent repairs, modifications, prior damage or history, quirks, upgrades, or anything else that may matter."
+            ></textarea>
+            <small class="field-helper">Optional — add anything that could help us understand the vehicle better.</small>
+          </label>
 
         </div>
 
