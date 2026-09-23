@@ -1791,6 +1791,391 @@ footer span{color:#657383}
   box-shadow:0 8px 20px rgba(169,20,40,.18) !important;
 }
 
+
+/* =========================================================
+   CENTENNIAL NOCO — FULL BRAND CONSISTENCY PASS
+   Navy / red / white through the entire customer journey.
+   ========================================================= */
+
+:root{
+  --cls-navy:#0b2747;
+  --cls-navy-dark:#071a30;
+  --cls-navy-mid:#164d7a;
+  --cls-red:#b7192e;
+  --cls-red-bright:#d82d40;
+  --cls-red-soft:#f9eef0;
+  --cls-white:#ffffff;
+  --cls-page:#f3f6f9;
+  --cls-panel:#f8fafc;
+  --cls-line:#d6e0e8;
+  --cls-text:#182431;
+  --cls-muted:#687480;
+}
+
+/* Page / cards */
+body,
+body.survey-mode,
+body.result-mode{
+  background:var(--cls-page) !important;
+  color:var(--cls-text);
+}
+
+.app-card,
+.pa-app-card{
+  background:#fff !important;
+  border-color:var(--cls-line) !important;
+}
+
+body.survey-mode .progress-wrap{
+  background:#fff !important;
+}
+
+.progress-track{
+  background:#e5ebf0 !important;
+}
+
+.progress-bar{
+  background:linear-gradient(90deg,var(--cls-navy),var(--cls-navy-mid)) !important;
+  box-shadow:0 0 18px rgba(11,39,71,.18) !important;
+}
+
+.progress-meta{
+  color:#6b7885 !important;
+}
+
+/* Form controls */
+.field>span,
+legend{
+  color:#24384b !important;
+}
+
+input,
+select,
+textarea{
+  background:#fff !important;
+  border-color:#ccd7e0 !important;
+  color:var(--cls-text) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--cls-red) !important;
+  box-shadow:0 0 0 4px rgba(183,25,46,.10) !important;
+}
+
+.check-group label{
+  background:#f7f9fb !important;
+  border-color:#d7e0e8 !important;
+  color:#24384b !important;
+}
+
+.rating-block output{
+  color:var(--cls-red) !important;
+}
+
+input[type=range]{
+  accent-color:var(--cls-red) !important;
+}
+
+.vehicle-card{
+  background:#f1f7fb !important;
+  border-color:#cbdce8 !important;
+}
+
+.vehicle-card .vehicle-icon{
+  background:#dceaf4 !important;
+  color:var(--cls-navy) !important;
+}
+
+.vehicle-card span{
+  color:#587084 !important;
+}
+
+/* Buttons */
+.primary-btn,
+.claim-btn,
+.final-offer-actions .primary-btn{
+  background:linear-gradient(135deg,var(--cls-navy),var(--cls-navy-mid)) !important;
+  color:#fff !important;
+  box-shadow:0 10px 26px rgba(11,39,71,.20) !important;
+}
+
+.primary-btn:hover,
+.claim-btn:hover{
+  filter:brightness(1.05) !important;
+}
+
+.secondary-btn,
+#decodeVinBtn{
+  background:linear-gradient(135deg,#9f1426,var(--cls-red-bright)) !important;
+  color:#fff !important;
+  box-shadow:0 8px 20px rgba(169,20,40,.18) !important;
+}
+
+.ghost-btn{
+  background:#edf2f6 !important;
+  color:#263a4d !important;
+}
+
+/* Result / appraisal */
+.quote-shell{
+  border-color:#cedae4 !important;
+  background:
+    radial-gradient(circle at 92% 15%,rgba(216,45,64,.07),transparent 24%),
+    linear-gradient(180deg,#fff,#f5f8fa) !important;
+  box-shadow:0 16px 36px rgba(7,31,55,.08) !important;
+}
+
+.quote-shell:after{
+  background:linear-gradient(90deg,var(--cls-navy),var(--cls-red-bright),var(--cls-navy)) !important;
+}
+
+.quote-brand{
+  color:#263d52 !important;
+}
+
+.quote-brand span{
+  background:var(--cls-navy) !important;
+  color:#fff !important;
+}
+
+.result-kicker,
+.result-next-kicker,
+.calculation-heading>span,
+.manual-kicker{
+  color:var(--cls-red) !important;
+}
+
+.range{
+  color:var(--cls-navy-dark) !important;
+}
+
+.quote-expiration{
+  background:var(--cls-navy) !important;
+  color:#fff !important;
+}
+
+.result-grid div{
+  background:#eef3f7 !important;
+}
+
+.result-grid span{
+  color:#6b7885 !important;
+}
+
+.result-grid strong{
+  color:#18324a !important;
+}
+
+.result-next p,
+.calculation-note,
+.calculation-heading p{
+  color:#687785 !important;
+}
+
+/* Calculation card */
+.calculation-breakdown{
+  border-color:#cfdae4 !important;
+  background:linear-gradient(180deg,#fff,#f4f7fa) !important;
+  box-shadow:0 10px 28px rgba(7,31,55,.06) !important;
+}
+
+.calculation-heading h3{
+  color:#172b3d !important;
+}
+
+/* Notices / follow-up */
+.notice{
+  background:#f3f7fa !important;
+  color:#40576b !important;
+  border-color:#d4dfe8 !important;
+}
+
+.offer-followup,
+body.result-mode .offer-followup{
+  background:#f8fafc !important;
+  border-color:#d2dde6 !important;
+  box-shadow:0 8px 26px rgba(7,31,55,.06) !important;
+}
+
+.offer-upload{
+  background:#fff !important;
+  border-color:#cbd7e0 !important;
+}
+
+.consent{
+  background:#f2f6f9 !important;
+  color:#526576 !important;
+}
+
+.result-disclaimer{
+  color:#748392 !important;
+}
+
+/* Tax-savings block */
+.tax-savings-card{
+  background:linear-gradient(145deg,#071a30,#0e3155) !important;
+  border-color:rgba(216,45,64,.34) !important;
+  box-shadow:0 14px 34px rgba(7,31,55,.16) !important;
+}
+
+.tax-savings-kicker{
+  color:#ff6b78 !important;
+}
+
+.tax-savings-card>p{
+  color:#c7d2dc !important;
+}
+
+.tax-total-row{
+  border-top-color:rgba(255,255,255,.12) !important;
+}
+
+.tax-total-row span{
+  color:#aebdca !important;
+}
+
+.tax-total-row strong{
+  color:#fff !important;
+}
+
+.tax-savings-card small{
+  color:#93a5b5 !important;
+}
+
+/* Manual-review path */
+.manual-shell{
+  background:
+    radial-gradient(circle at 95% 5%,rgba(216,45,64,.10),transparent 25%),
+    linear-gradient(145deg,#071a30,#0d3155) !important;
+  border-color:rgba(216,45,64,.30) !important;
+  box-shadow:0 18px 44px rgba(7,31,55,.18) !important;
+}
+
+.manual-message{
+  background:rgba(255,255,255,.06) !important;
+  border-color:rgba(255,255,255,.10) !important;
+}
+
+.manual-message p{
+  color:#c8d3dc !important;
+}
+
+.manual-status{
+  background:rgba(216,45,64,.10) !important;
+  border-color:rgba(216,45,64,.24) !important;
+}
+
+.manual-check{
+  background:var(--cls-red-bright) !important;
+  color:#fff !important;
+}
+
+.manual-status small,
+.manual-note{
+  color:#aab9c6 !important;
+}
+
+/* Final offer / photo verification */
+.final-offer-panel{
+  background:#f8fafc !important;
+  border-color:#d1dce5 !important;
+  box-shadow:0 8px 26px rgba(7,31,55,.06) !important;
+}
+
+.final-offer-panel h3{
+  color:#172b3d !important;
+}
+
+.final-offer-panel>p,
+.field-helper,
+.final-offer-status{
+  color:#687785 !important;
+}
+
+.final-offer-extras{
+  border-top-color:#d6e0e8 !important;
+}
+
+.photo-tile{
+  border-color:#c6d2dc !important;
+  background:linear-gradient(180deg,#fbfcfd,#eef3f7) !important;
+}
+
+.photo-tile.required-photo{
+  border-color:#7f9ab0 !important;
+}
+
+.photo-tile:hover{
+  border-color:var(--cls-red) !important;
+  background:linear-gradient(180deg,#fff,#f5f8fa) !important;
+}
+
+.photo-guide-art{
+  color:#536c80 !important;
+}
+
+.photo-tile:before{
+  border-color:rgba(11,39,71,.12) !important;
+}
+
+.photo-tile strong{
+  color:#20364a !important;
+  text-shadow:0 1px 0 rgba(255,255,255,.9) !important;
+}
+
+.photo-tile small{
+  color:#748493 !important;
+}
+
+.photo-tile-icon.plus{
+  background:var(--cls-navy) !important;
+  color:#fff !important;
+}
+
+.photo-tile.has-photo:after{
+  background:var(--cls-navy) !important;
+  color:#fff !important;
+}
+
+.final-offer-success,
+.followup-success{
+  background:#eef8f3 !important;
+  border-color:#c6e2d5 !important;
+  color:#22634d !important;
+}
+
+/* Footer */
+footer{
+  color:#687785 !important;
+}
+
+footer strong{
+  color:var(--cls-navy) !important;
+}
+
+footer span{
+  color:#687785 !important;
+}
+
+/* Mobile consistency */
+@media(max-width:720px){
+  body,
+  body.survey-mode,
+  body.result-mode{
+    background:#f3f6f9 !important;
+  }
+
+  body.survey-mode .progress-wrap{
+    background:#fff !important;
+  }
+
+  .photo-tile{
+    background:linear-gradient(180deg,#fbfcfd,#eef3f7) !important;
+  }
+}
+
 </style>
 </head>
 <body>
